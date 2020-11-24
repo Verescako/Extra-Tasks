@@ -6,12 +6,10 @@ let   str, arr = [], result;    // str - строка для преобразо�
     str = String(num);
     arr = str.split('');
 
-
     result = arr.reduce(function(sum, current) {
         return  sum * current;
     },);
 
- 
     result **= 3;
     str = String(result);
     console.log(str.substring(0, 2));
