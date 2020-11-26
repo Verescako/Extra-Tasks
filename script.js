@@ -1,6 +1,6 @@
    "use strict";
-const num = 266219;
-let   str, arr = [], result;    // str - строка для преобразования числа в строку 
+   const num = 266219;
+   let   str, arr = [], result;    // str - строка для преобразования числа в строку 
                         
 
     str = String(num);
