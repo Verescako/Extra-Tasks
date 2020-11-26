@@ -22,7 +22,7 @@
     
     console.log(arr[lang]);
 
-    let namePerson = prompt('Введите imia: ');
+    let namePerson = prompt('Введите имя: ');
 
         namePerson = namePerson == 'Артем' ? 'директор' : 
                      namePerson == 'Максим' ? 'преподаватель' : 'студент' ;   
