@@ -1,15 +1,30 @@
-   "use strict";
-   const num = 266219;
-   let   str, arr = [], result;    // str - строка для преобразования числа в строку 
-                        
+    "use strict";
 
-    str = String(num);
-    arr = str.split('');
+    const lang = prompt('Введите "ru" или "en"');
+     
+    if (lang == "ru") {
+       console.log('понедельник, вторник, среда, четверг, пятница, суббота, воскресенье');
+    } else if (lang == "en") {
+        console.log('monday, tuesday, wednesday, thursday, friday, saturday, sunday');
+    };
 
-    result = arr.reduce(function(sum, current) {
-        return  sum * current;
-    },);
+    switch (lang) {
+        case "ru" : console.log('понедельник, вторник, среда, четверг, пятница, суббота, воскресенье');
+        break;
+        case "en" : console.log('monday, tuesday, wednesday, thursday, friday, saturday, sunday'); 
+        break;
+    } 
+    
+    let  arr = {
+        'ru' : ['понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота', 'воскресенье'],
+        'en' : ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'],
+    };
+    
+    console.log(arr[lang]);
 
-    result **= 3;
-    str = String(result);
-    console.log(str.substring(0, 2));
+    let namePerson = prompt('Введите imia: ');
+
+        namePerson = namePerson == 'Артем' ? 'директор' : 
+                     namePerson == 'Максим' ? 'преподаватель' : 'студент' ;   
+        
+    console.log(namePerson);
