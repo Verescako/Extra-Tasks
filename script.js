@@ -6,7 +6,7 @@
                 'en' : ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'],
             };
   
-    if (lang === "ru" || "en") 
+    if (lang === "ru" || lang === "en" ) 
        console.log(arr[lang]);
     
     switch (lang) {
